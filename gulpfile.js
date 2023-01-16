@@ -41,7 +41,6 @@ gulp.task('sass', function(){
     .pipe(browserSync.stream())
     .pipe(rename('style.min.css'))
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(dirs.build + '/'));
 });
 
@@ -56,8 +55,8 @@ gulp.task('html', function() {
 
 gulp.task('img', function () {
     return gulp.src([
-        dirs.source + '/assets/img/*.{gif,png,jpg,jpeg,svg}',
-        dirs.source + '/assets/img/**/*.{gif,png,jpg,jpeg,svg}',
+        dirs.source + '/assets/img/*.{gif,png,jpg,jpeg,svg,ico}',
+        dirs.source + '/assets/img/**/*.{gif,png,jpg,jpeg,svg,ico}',
     ],
         {since: gulp.lastRun('img')}
     )
@@ -68,8 +67,8 @@ gulp.task('img', function () {
 
 gulp.task('images', function () {
     return gulp.src([
-        dirs.source + '/assets/images/*.{gif,png,jpg,jpeg,svg}',
-        dirs.source + '/assets/images/**/*.{gif,png,jpg,jpeg,svg}',
+        dirs.source + '/assets/images/*.{gif,png,jpg,jpeg,svg,ico}',
+        dirs.source + '/assets/images/**/*.{gif,png,jpg,jpeg,svg,ico}',
     ],
         {since: gulp.lastRun('img')}
     )
@@ -80,8 +79,8 @@ gulp.task('images', function () {
 
 gulp.task('imguploads', function () {
     return gulp.src([
-        dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg}',
-        dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg}',
+        dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg,ico}',
+        dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg,ico}',
     ],
         {since: gulp.lastRun('img')}
     )
@@ -211,6 +210,8 @@ gulp.task('serve', gulp.series('build', function() {
         [
             dirs.source + '/sass/**/*.scss',
             dirs.source + '/sass/*.scss',
+            dirs.source + '/scss/**/*.scss',
+            dirs.source + '/scss/*.scss',
             dirs.source + '/*.scss',
         ],
         gulp.series('sass', reloader)

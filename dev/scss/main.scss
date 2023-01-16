@@ -247,7 +247,7 @@
 }
 
 .first-screen {
-    margin-bottom: $margin-bottom;
+    margin-bottom: var(--margin-bottom);
 
     &-slider {
         &__item {
@@ -295,7 +295,7 @@
 }
 
 .delivery {
-    margin-bottom: calc($margin-bottom + 25px);
+    margin-bottom: calc(var(--margin-bottom) + 25px);
 
     &-slider {
         max-width: 1116px;
@@ -447,7 +447,7 @@
             background-size: 100% 100%;
         }
     }
-    
+
     &--services {
         padding: 14px 30px;
     }
@@ -628,7 +628,7 @@
     background: $bg-primary;
     border-radius: 20px;
     padding: $padding;
-    margin-bottom: $margin-bottom;
+    margin-bottom: var(--margin-bottom);
 
     & .row div:not(.slick-slide):nth-child(n+5) {
         margin-top: 48px;
@@ -674,7 +674,7 @@
 }
 
 .about {
-    margin-bottom: $margin-bottom;
+    margin-bottom: var(--margin-bottom);
 
     &-content {
         color: $color-white;
@@ -684,12 +684,12 @@
 }
 
 .faq {
-    margin-bottom: $margin-bottom;
+    margin-bottom: var(--margin-bottom);
 }
 
 .txt {
     background: $bg-primary;
-    margin-bottom: $margin-bottom;
+    margin-bottom: var(--margin-bottom);
     padding: $padding;
     border-radius: 20px;
 
@@ -801,5 +801,5 @@
     background: $bg-primary;
     border-radius: 20px;
     padding: $padding;
-    margin-bottom: $margin-bottom;
+    margin-bottom: var(--margin-bottom);
 }

@@ -3,6 +3,9 @@ $color-white: #fff;
 $color-grey: #CBCBCB;
 $color-green: #89C249;
 $bg-primary: #363A4D;
-$margin-bottom: 97px;
 $padding: 90px 0 110px;
 $section-margin: 50px;
+
+:root {
+    --margin-bottom: 97px;
+}

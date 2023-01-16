@@ -118,6 +118,7 @@
   border-bottom-style: none;
   background: none;
   font-size: 0;
+  transition: border-color 0.2s;
 }
 .master-tao .slick-prev:hover {
   border-color: #89C249;
@@ -136,6 +137,7 @@
   border-bottom-style: none;
   background: none;
   font-size: 0;
+  transition: border-color 0.2s;
 }
 .master-tao .slick-next:hover {
   border-color: #89C249;

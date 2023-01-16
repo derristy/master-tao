@@ -108,6 +108,7 @@
         border-bottom-style: none;
         background: none;
         font-size: 0;
+        transition: border-color .2s;
 
         &:hover {
             border-color: $color-green;
@@ -128,6 +129,7 @@
         border-bottom-style: none;
         background: none;
         font-size: 0;
+        transition: border-color .2s;
 
         &:hover {
             border-color: $color-green;

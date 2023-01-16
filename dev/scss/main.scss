@@ -211,6 +211,11 @@
             border-top-right-radius: var(--bs-accordion-inner-border-radius);
             border-top-left-radius: var(--bs-accordion-inner-border-radius);
         }
+
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 3px 3px 10px rgba(56, 58, 63, 0.377);
+        }
     }
 
     & .accordion-button {

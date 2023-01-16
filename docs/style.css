@@ -208,6 +208,10 @@
   border-top-right-radius: var(--bs-accordion-inner-border-radius);
   border-top-left-radius: var(--bs-accordion-inner-border-radius);
 }
+.master-tao .accordion-item:hover {
+  opacity: 0.9;
+  box-shadow: 3px 3px 10px rgba(56, 58, 63, 0.377);
+}
 .master-tao .accordion-button {
   font-weight: 700;
   font-size: 18px;

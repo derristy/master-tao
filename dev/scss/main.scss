@@ -621,6 +621,12 @@
             transform: translate(-50%, 0);
         }
     }
+
+    &.decoration--orange {
+        &:before {
+            background: $color-orange;
+        }
+    }
 }
 
 .decoration.template-title {

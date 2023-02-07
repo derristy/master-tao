@@ -561,6 +561,9 @@ input:checked + .custom-checkbox:before {
   left: 50%;
   transform: translate(-50%, 0);
 }
+.template-title.decoration--orange:before {
+  background: #E58D35;
+}
 
 .decoration.template-title {
   padding-bottom: 19px;

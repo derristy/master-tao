@@ -454,8 +454,12 @@
 .form-label {
   color: #fff;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 126%;
+  margin: 0;
+}
+.form-label--checkbox {
+  margin-left: 9px;
 }
 .form-title {
   font-weight: 700;
@@ -541,7 +545,6 @@ input:checked + .custom-checkbox:before {
   font-size: 36px;
   line-height: 124.5%;
   text-transform: uppercase;
-  text-align: center;
 }
 .template-title p {
   text-align: center;

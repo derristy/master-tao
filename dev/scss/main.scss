@@ -501,8 +501,13 @@
     &-label {
         color: $color-white;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 126%;
+        margin: 0;
+
+        &--checkbox {
+            margin-left: 9px;
+        }
     }
 
     &-title {
@@ -596,7 +601,6 @@
         font-size: 36px;
         line-height: 124.5%;
         text-transform: uppercase;
-        text-align: center;
     }
 
     & p {

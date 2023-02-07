@@ -536,6 +536,7 @@ input:checked + .custom-checkbox:before {
   flex-direction: column;
   padding-bottom: 0;
   margin-bottom: 0;
+  align-items: flex-start;
 }
 .template-title--about .template-border-decoration {
   margin: 19px 0 44px 0;
